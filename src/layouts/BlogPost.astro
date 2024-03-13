@@ -1,0 +1,33 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+import NavBar from '../components/NavBar.astro';
+
+type Props = CollectionEntry<'blog'>['data'];
+
+const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+---
+
+<html lang="en" style="background-image: url('https://w4s4p34.github.io/static/media/NoiseVFX.d91e105ee136f2cec258.gif'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+	<body>
+		<NavBar />
+		<main>
+			<article class="">
+				<div class="flex flex-col justify-start items-center gap-7  text-white h-screen">
+					<div class="title">
+						<div class="date">
+							<h1 class="text-7xl font-serif">{title}</h1>
+							<hr />
+						</div>
+					</div>
+					<div class="text-center w-4/5 font-monospace">
+						<slot />
+					</div>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>

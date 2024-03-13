@@ -1,0 +1,37 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import '@fontsource/twinkle-star';
+import NavBar from '../components/NavBar.astro';
+---
+
+<html>
+
+    
+    <NavBar />
+    <div id="home" class="w-full flex flex-col h-screen items-center justify-center bg-black relative  ">
+        <div class="absolute inset-0">
+            <img src="https://w4s4p34.github.io/static/media/NoiseVFX.d91e105ee136f2cec258.gif" alt="Background GIF" class="object-cover w-full h-full">
+        </div>
+        <div class="flex flex-col w-full gap-6 max-w-xl z-10 ">
+            <div class="w-full text-7xl font-medium tracking-tight text-white">
+                <div class="flex flex-row">
+                    <a class="font-thin">SARATH</a>
+                    <img src="https://www.amitsharma.online/homepage/sundecal.svg" alt="Made in India Decal" class="size-16"> 
+                </div>
+                <div class="flex flex-row"> 
+                    <a class="font-serif relative"> STUDENT ENGINEER DEVELOPER </a>
+                    <img src="https://www.amitsharma.online/homepage/madeinindiadecal.svg" alt="Made in India Decal" class="size-28 absolute inset-x-2/3 inset-y-2/4 "> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+</html>
+
+
+
+
+

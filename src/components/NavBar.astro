@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import {Logo} from '../assets/logo1.png'
+---
+
+<div class="bg-black shadow">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between py-4">
+        <div >
+          <Image src={import('../assets/logo1.png')} alt="" format="webp"  class="w-10 h-10 text-purple-600" viewBox="0 0 24 24" />
+
+        </div>
+
+        <div class=" sm:flex sm:items-center">
+            <a href="/" class="text-white text-sm font-anta  hover:text-gray-300 mr-4">Home</a>
+          <a href="/Projects" class="text-white font-anta text-sm  hover:text-gray-300 mr-4">Blogs</a>
+          <a href="/about" class="text-white text-sm font-anta  hover:text-gray-300 mr-4">About</a>
+        </div>
+            
+
+      </div>
+    </div>
+  </div>
